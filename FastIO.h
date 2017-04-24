@@ -110,7 +110,7 @@ public:
      * @param initial (optional) initial state of the pin after construction: default is 0 (low)
      */
     FastOut() : FastInOut<pin>::FastInOut() {
-        write(initial);
+        this->write(initial);
         SET_DIR_OUTPUT;
     }
 
